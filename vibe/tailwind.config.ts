@@ -21,7 +21,18 @@ const config: Config = {
     },
     fontFamily: {
       'roboto-con':'var(--font-roboto-condensed)',
+      'racing':'var(--font-racing-sans-one)',
     },
+    keyframes: {
+      'marquee': {
+        '0%': { transform: 'translateX(0)' },
+        '100%': { transform: 'translateX(-100%)' },
+      },
+    },
+    animation: {
+      'infinite-marquee':'marquee 40s linear infinite',
+    },
+    
     },
   },
   plugins: [],

@@ -11,3 +11,9 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb))
 }
+
+@layer utilities {
+  .pause {
+    animation-play-state: paused;
+  }
+}
