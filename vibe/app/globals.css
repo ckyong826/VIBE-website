@@ -9,7 +9,8 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb))
+  background: rgb(var(--background-rgb));
+  font-family: 'Archivo Black', sans-serif;
 }
 
 @layer utilities {
