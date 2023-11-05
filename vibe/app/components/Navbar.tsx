@@ -22,7 +22,7 @@ export default function Navbar(){
   return(
     <div className='fixed bg-t-black select-none z-[200]'>
       <nav className="w-screen h-[100px] flex text-t-white items-center justify-between top-0">
-        <div className='w-[150px] h-auto block translate-x-[30%] max-md:translate-x-[20%]'>
+        <div className='w-[130px] h-auto block translate-x-[30%] max-md:translate-x-[20%]'>
         <Image src={Logo} alt="VIBE-streetwear" className='object-scale-down items-center cursor-pointer' onClick={() => router.push('/')}/>
         </div>
         <ul className={`w-[600px] text-[30px] flex font-roboto-con font-medium items-center justify-center 

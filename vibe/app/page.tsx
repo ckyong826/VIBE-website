@@ -42,9 +42,9 @@ export default function Home() {
 
     {/* second page */}
       <section className="snap-center block flex flex-col h-screen w-screen cursor-default select-none ">
-        <div className="flex flex-col pt-[110px] items-center">
+        <div className="flex flex-col h-[50%] pt-[110px] items-center">
           {/* Poster */}
-          <div className="block h-[40%] w-[40%]">
+          <div className="block h-[70%] w-[40%]">
             <Image
               src={All_Poster}
               alt='All-Product-Poster'
@@ -60,11 +60,13 @@ export default function Home() {
             With us, you don't just wear your heart on your sleeve; you wear your convictions, your passions, your stories.
             </div>
           </div>
-          {/* Tshirt */}
-          <section className="truncate w-screen h-[100%] bg-black">
+          
+          
+        </div>
+        {/* Tshirt */}
+        <section className="truncate w-screen h-[100%] bg-black">
             
           </section>
-        </div>
       </section>
       
     </div>
