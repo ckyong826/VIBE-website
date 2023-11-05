@@ -1,14 +1,8 @@
 import Image from "next/image"
 import Home_photo from "../public/vibe-streetwear-model-homepage.jpg"
 import All_Poster from "../public/AllProduct.jpg"
-import { Bad_Script } from "next/font/google"
-
-const bad_script = Bad_Script({
-  weight: ['400'],
-  style: 'normal',
-  subsets: ['latin'],
-  display: 'swap'
-});
+import { bad_script} from "./components/font"
+import Tshirt from "./components/Tshirt"
 
 export default function Home() {
   return (
@@ -63,10 +57,15 @@ export default function Home() {
           
           
         </div>
-        {/* Tshirt */}
-        <section className="truncate w-screen h-[100%] bg-black">
-            
-          </section>
+        {/* Tshirt Slider*/}
+        <section className="truncate w-screen h-[100%] pt-[40px] flex flex-row items-center justify-between
+                            pl-[20px] pr-[20px]">
+          <Tshirt/>
+          <Tshirt/>
+          <Tshirt/>
+          <Tshirt/>
+          <Tshirt/>
+        </section>
       </section>
       
     </div>
