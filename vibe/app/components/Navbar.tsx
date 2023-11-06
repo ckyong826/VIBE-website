@@ -37,7 +37,7 @@ export default function Navbar(){
                     onClick={()=>setIsMenuOpen(false)}
                     key={index}  
                     className='mx-5 hover:text-t-yellow text-center transition duration-700 ease-in-out 
-                                inline-block max-lg:w-[100%] max-lg:mx-0 truncate '>
+                                inline-block max-lg:w-[100%] max-lg:mx-0 truncate max-lg:hover:none'>
                                           {link.name}
                                           </Link>
                                           
@@ -49,7 +49,7 @@ export default function Navbar(){
                                           ACCOUNT</Link>
         </ul>
 
-        <ul className='flex w-[150px] justify-center items-center block max-md:translate-x-[10%]'>
+        <ul className='flex w-[150px] justify-center items-center max-lg:justify-end max-lg:pr-[10px]'>
           <button onClick={() => router.push('/account')} className=' max-lg:hidden'>
             <FontAwesomeIcon icon={faUser} className=' mx-2 w-[20px] h-[20px] hover:text-t-yellow transition duration-700 ease-in-out' />
           </button>

@@ -20,6 +20,7 @@ const config: Config = {
         't-yellow':'#BDF704',
     },
     fontFamily: {
+      'archivo-black':'var(--font-archivo-black)',
       'roboto-con':'var(--font-roboto-condensed)',
       'racing':'var(--font-racing-sans-one)',
     },

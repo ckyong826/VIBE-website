@@ -44,7 +44,7 @@ export default function Home() {
             <Image
               src={All_Poster}
               alt='All-Product-Poster'
-              className="aspect-video w-[100%] h-[100%] lg:rounded-[20px] object-cover"></Image>
+              className="aspect-video trunscate w-[100%] h-[100%] lg:rounded-[20px] object-cover"></Image>
           </div>
           {/* Title */}
           <div className="uppercase pt-[10px] text-[30px] text-center">
