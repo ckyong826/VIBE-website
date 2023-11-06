@@ -10,7 +10,9 @@ export default function Bottombar() {
     "VIBE",
   ]
   return (
-    <div className="w-screen select-none h-[5%] text-[17px] cursor-default font-racing bg-[#BDF704] text-[#1D1D1F] flex justify-between truncate uppercase fixed bottom-0 items-center hover:paused">
+    <div className="w-screen select-none h-[5%] text-[17px] cursor-default font-racing bg-[#BDF704] 
+                    text-[#1D1D1F] flex justify-between truncate uppercase fixed bottom-0 items-center 
+                    z-[999]">
       <div className="flex inline-block animate-infinite-marquee">
         {tagline.map((tag,index) => {
           return(

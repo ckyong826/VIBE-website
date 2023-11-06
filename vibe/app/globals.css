@@ -13,6 +13,13 @@ body {
   font-family: 'Archivo Black', sans-serif;
 }
 
+.swiper-slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 @layer utilities {
   .pause {
     animation-play-state: paused;

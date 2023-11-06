@@ -1,8 +1,10 @@
+
+
 import Image from "next/image"
 import Home_photo from "../public/vibe-streetwear-model-homepage.jpg"
 import All_Poster from "../public/AllProduct.jpg"
 import { bad_script} from "./components/font"
-import Tshirt from "./components/Tshirt"
+import Slider from "./components/TshirtSlider"
 
 export default function Home() {
   return (
@@ -45,27 +47,18 @@ export default function Home() {
               className="aspect-video w-[100%] h-[100%] lg:rounded-[20px] object-cover"></Image>
           </div>
           {/* Title */}
-          <div className="uppercase pt-[10px] text-[30px]">
+          <div className="uppercase pt-[10px] text-[30px] text-center">
             chill collection
           </div>
           {/* Description */}
           <div className={bad_script.className} >
-            <div className="text-[15px]">
+            <div className="text-[15px] text-center">
             With us, you don't just wear your heart on your sleeve; you wear your convictions, your passions, your stories.
             </div>
           </div>
-          
-          
         </div>
         {/* Tshirt Slider*/}
-        <section className="truncate w-screen h-[100%] pt-[40px] flex flex-row items-center justify-between
-                            pl-[20px] pr-[20px]">
-          <Tshirt/>
-          <Tshirt/>
-          <Tshirt/>
-          <Tshirt/>
-          <Tshirt/>
-        </section>
+        <Slider/>
       </section>
       
     </div>
