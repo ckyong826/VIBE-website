@@ -1,5 +1,3 @@
-
-
 import Image from "next/image"
 import Home_photo from "../public/vibe-streetwear-model-homepage.jpg"
 import All_Poster from "../public/AllProduct.jpg"
