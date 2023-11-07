@@ -38,19 +38,19 @@ export default function Home() {
       <section className="snap-center block flex flex-col h-screen w-screen cursor-default select-none ">
         <div className="flex flex-col h-[50%] pt-[110px] items-center">
           {/* Poster */}
-          <div className="block h-[70%] w-[40%]">
+          <div className="block h-[70%] w-[40%] max-lg:w-[60%] max-md:w-[80%] max-sm:w-[100%]">
             <Image
               src={All_Poster}
               alt='All-Product-Poster'
-              className="aspect-video trunscate w-[100%] h-[100%] lg:rounded-[20px] object-cover"></Image>
+              className="aspect-video trunscate w-[100%] h-[100%] sm:rounded-[20px] object-cover"></Image>
           </div>
           {/* Title */}
-          <div className="uppercase pt-[10px] text-[30px] text-center">
+          <div className="uppercase pt-[10px] text-[30px] text-center max-md:text-[20px]">
             chill collection
           </div>
           {/* Description */}
           <div className={bad_script.className} >
-            <div className="text-[15px] text-center">
+            <div className="text-[15px] text-center max-md:text-[10px]">
             With us, you don't just wear your heart on your sleeve; you wear your convictions, your passions, your stories.
             </div>
           </div>
