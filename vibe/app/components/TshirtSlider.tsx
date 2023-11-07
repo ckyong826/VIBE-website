@@ -6,10 +6,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import '.././globals.css'
 import { Navigation} from 'swiper/modules';
-import Tshirt from './Tshirt';
+import Tshirt from './TshirtComponent';
 
 export default function Slider() {
-
   return (
     <>
       <Swiper 
@@ -44,9 +43,7 @@ export default function Slider() {
         }}
         modules={[Navigation]}
         className="truncate w-screen h-[45%] pt-[20px] flex flex-row items-center justify-center
-                            pl-[20px] pr-[20px] "
-      >
-        
+                            pl-[20px] pr-[20px] ">
         <SwiperSlide><Tshirt/></SwiperSlide>
         <SwiperSlide><Tshirt/></SwiperSlide>
         <SwiperSlide><Tshirt/></SwiperSlide>

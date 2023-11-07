@@ -3,12 +3,13 @@ import Home_photo from "../public/vibe-streetwear-model-homepage.jpg"
 import All_Poster from "../public/AllProduct.jpg"
 import { bad_script} from "./components/font"
 import Slider from "./components/TshirtSlider"
+import StoryBox from "./components/storyComponent";
 
 export default function Home() {
   return (
     <div className="scroll-smooth overflow-y-scroll snap-y snap-mandatory h-screen scrollbar-hide cursor-default select-none">
       {/* First Page */}
-      <section className="snap-center block flex flex-col h-screen pt-[100px] w-screen">
+      <section className="snap-start block flex flex-col h-screen pt-[100px] w-screen">
         {/* New + Image */}
         <div className="flex h-[60%] max-lg:h-[100%] flex-row justify-center items-end max-md:flex-col">
           <div className="h-[100%] flex items-end inline-block justify-end pl-[5%] translate-y-[20%]
@@ -34,15 +35,15 @@ export default function Home() {
         </div>
       </section>
 
-    {/* second page */}
-      <section className="snap-center block flex flex-col h-screen w-screen cursor-default select-none ">
+    {/* second page Shop*/}
+      <section className="snap-start block flex flex-col h-screen w-screen ">
         <div className="flex flex-col h-[50%] pt-[110px] items-center">
           {/* Poster */}
           <div className="block h-[70%] w-[40%] max-lg:w-[60%] max-md:w-[80%] max-sm:w-[100%]">
             <Image
               src={All_Poster}
               alt='All-Product-Poster'
-              className="aspect-video trunscate w-[100%] h-[100%] sm:rounded-[20px] object-cover"></Image>
+              className="aspect-video trunscate w-[100%] h-[100%] sm:rounded-[20px] object-cover"/>
           </div>
           {/* Title */}
           <div className="uppercase pt-[10px] text-[30px] text-center max-md:text-[20px]">
@@ -59,6 +60,29 @@ export default function Home() {
         <Slider/>
       </section>
       
+      {/* Third Page Story */}
+      <section className="snap-start block flex flex-col h-screen pt-[80px] w-screen justify-center items-center">
+        {/* Top Column */}
+          <div className="w-[95%] h-[50%]">
+            <StoryBox BigText="35px" smallText="18px" title={"The soft launch of our brand, VIBE !"} date={"SUN, 9 April 2023"}/>
+          </div>
+        {/* Bottom Column */}
+        <div className="w-[95%] h-[40%] flex flex-row justify-center items-center">
+          <div className="w-[50%] h-[100%] pr-5">
+            <StoryBox BigText="25px" smallText="10px" title={"The soft launch of our brand, VIBE !"} date={"SUN, 9 April 2023"}/>
+          </div>
+          <div className="w-[25%] h-[100%] pr-5">
+            <StoryBox BigText="25px" smallText="10px" title={"The soft launch of our brand, VIBE !"} date={"SUN, 9 April 2023"}/>
+          </div>
+          <div className="w-[20%] h-[100%] pr-5">
+            <StoryBox BigText="25px" smallText="10px" title={"The soft launch of our brand, VIBE !"} date={"SUN, 9 April 2023"}/>
+          </div>
+          <div className="text-t-black uppercase h-[90%] w-[4%] bg-t-white  rounded-l-2xl flex items-center justify-center
+                          cursor-pointer hover:bg-t-yellow transition duration-700 ease-in-out">
+            <span className="rotate-90 text-[30px]">more</span>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
