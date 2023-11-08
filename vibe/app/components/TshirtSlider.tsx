@@ -6,9 +6,19 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import '.././globals.css'
 import { Navigation} from 'swiper/modules';
-import Tshirt from './TshirtComponent';
+import TshirtComponent from './TshirtComponent';
+import All_Poster from "../../public/AllProduct.jpg"
 
 export default function Slider() {
+  const tshirts = [
+    {alt:"CHILL BRO TEE",name:"Chill Bro Tee(black)",src:All_Poster,price:"RM 129.00 MYR"},
+    {alt:"CHILL BRO TEE",name:"Chill Bro Tee(black)",src:All_Poster,price:"RM 129.00 MYR"},
+    {alt:"CHILL BRO TEE",name:"Chill Bro Tee(black)",src:All_Poster,price:"RM 129.00 MYR"},
+    {alt:"CHILL BRO TEE",name:"Chill Bro Tee(black)",src:All_Poster,price:"RM 129.00 MYR"},
+    {alt:"CHILL BRO TEE",name:"Chill Bro Tee(black)",src:All_Poster,price:"RM 129.00 MYR"},
+    {alt:"CHILL BRO TEE",name:"Chill Bro Tee(black)",src:All_Poster,price:"RM 129.00 MYR"},
+  ]
+
   return (
     <>
       <Swiper 
@@ -44,12 +54,11 @@ export default function Slider() {
         modules={[Navigation]}
         className="truncate w-screen h-[45%] pt-[20px] flex flex-row items-center justify-center
                             pl-[20px] pr-[20px] ">
-        <SwiperSlide><Tshirt/></SwiperSlide>
-        <SwiperSlide><Tshirt/></SwiperSlide>
-        <SwiperSlide><Tshirt/></SwiperSlide>
-        <SwiperSlide><Tshirt/></SwiperSlide>
-        <SwiperSlide><Tshirt/></SwiperSlide>
-        <SwiperSlide><Tshirt/></SwiperSlide>
+        {tshirts.map((tshirt,index) => (
+          <SwiperSlide key={index}>
+            <TshirtComponent alt={tshirt.alt} name={tshirt.name} src={tshirt.src} price={tshirt.price} />
+          </SwiperSlide>
+        ))}
         <div className="swiper-button-next"></div> 
         <div className="swiper-button-prev"></div>
       </Swiper>

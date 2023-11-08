@@ -39,7 +39,8 @@ export default function Home() {
       <section className="snap-start block flex flex-col h-screen w-screen ">
         <div className="flex flex-col h-[50%] pt-[110px] items-center">
           {/* Poster */}
-          <div className="block h-[70%] w-[40%] max-lg:w-[60%] max-md:w-[80%] max-sm:w-[100%]">
+          <div className="block h-[70%] w-[40%] max-lg:w-[60%] max-md:w-[80%] max-sm:w-[100%] max-md:h-[80%]
+                          max-sm:h-[90%]">
             <Image
               src={All_Poster}
               alt='All-Product-Poster'
@@ -83,6 +84,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Fourth Page FaQ*/}
     </div>
   )
 }

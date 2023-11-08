@@ -12,7 +12,7 @@ export default function Navbar(){
     {name:"HOME",link:"/"},
     {name:"SHOP",link:"/shop"},
     {name:"STORY",link:"/story"},
-    {name:"FAQs",link:"/faqs"},
+    {name:"STOCK",link:"/stock"},
     {name:"ABOUT",link:"/about"},
   ]
 
