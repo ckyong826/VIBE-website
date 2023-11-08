@@ -4,6 +4,7 @@ import All_Poster from "../public/AllProduct.jpg"
 import { bad_script} from "./components/font"
 import Slider from "./components/TshirtSlider"
 import StoryBox from "./components/storyComponent";
+import ShopPoster from "./components/ShopPosterComponent"
 
 export default function Home() {
   return (
@@ -37,18 +38,12 @@ export default function Home() {
 
     {/* second page Shop*/}
       <section className="snap-start block flex flex-col h-screen w-screen ">
+        {/* Poster */}
         <div className="flex flex-col h-[50%] pt-[110px] items-center">
-          {/* Poster */}
-          <div className="block h-[70%] w-[40%] max-lg:w-[60%] max-md:w-[80%] max-sm:w-[100%] max-md:h-[80%]
-                          max-sm:h-[90%]">
-            <Image
-              src={All_Poster}
-              alt='All-Product-Poster'
-              className="aspect-video trunscate w-[100%] h-[100%] sm:rounded-[20px] object-cover"/>
-          </div>
-          {/* Title */}
-          <div className="uppercase pt-[10px] text-[30px] text-center max-md:text-[20px]">
-            chill collection
+        <ShopPoster alt="All-Product-Poster" name="chill collection" src={All_Poster} />
+        {/* Title */}
+        <div className="uppercase pt-[10px] text-[30px] text-center max-md:text-[20px]">
+        chill collection
           </div>
           {/* Description */}
           <div className={bad_script.className} >
@@ -56,7 +51,7 @@ export default function Home() {
             With us, you don't just wear your heart on your sleeve; you wear your convictions, your passions, your stories.
             </div>
           </div>
-        </div>
+          </div>
         {/* Tshirt Slider*/}
         <Slider/>
       </section>
@@ -65,18 +60,18 @@ export default function Home() {
       <section className="snap-start block flex flex-col h-screen pt-[80px] w-screen justify-center items-center">
         {/* Top Column */}
           <div className="w-[95%] h-[50%]">
-            <StoryBox BigText="35px" smallText="18px" title={"The soft launch of our brand, VIBE !"} date={"SUN, 9 April 2023"}/>
+            <StoryBox BigText={"text-[30px]"} smallText={"text-[18px]"} title={"The soft launch of our brand, VIBE !"} date={"SUN, 9 April 2023"}/>
           </div>
         {/* Bottom Column */}
         <div className="w-[95%] h-[40%] flex flex-row justify-center items-center">
           <div className="w-[50%] h-[100%] pr-5">
-            <StoryBox BigText="25px" smallText="10px" title={"The soft launch of our brand, VIBE !"} date={"SUN, 9 April 2023"}/>
+            <StoryBox BigText={"text-[20px]"} smallText={"text-[15px]"} title={"The soft launch of our brand, VIBE !"} date={"SUN, 9 April 2023"}/>
           </div>
           <div className="w-[25%] h-[100%] pr-5">
-            <StoryBox BigText="25px" smallText="10px" title={"The soft launch of our brand, VIBE !"} date={"SUN, 9 April 2023"}/>
+            <StoryBox BigText={"text-[20px]"} smallText={"text-[15px]"} title={"The soft launch of our brand, VIBE !"} date={"SUN, 9 April 2023"}/>
           </div>
           <div className="w-[20%] h-[100%] pr-5">
-            <StoryBox BigText="25px" smallText="10px" title={"The soft launch of our brand, VIBE !"} date={"SUN, 9 April 2023"}/>
+            <StoryBox BigText={"text-[20px]"} smallText={"text-[15px]"} title={"The soft launch of our brand, VIBE !"} date={"SUN, 9 April 2023"}/>
           </div>
           <div className="text-t-black uppercase h-[90%] w-[4%] bg-t-white  rounded-l-2xl flex items-center justify-center
                           cursor-pointer hover:bg-t-yellow transition duration-700 ease-in-out">

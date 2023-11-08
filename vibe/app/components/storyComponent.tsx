@@ -16,10 +16,10 @@ export default function StoryBox(props: StoryBoxProps){
               src={All_Poster}
               alt='All-Product-Poster'
               className=" trunscate w-[100%] h-[80%] sm:rounded-[20px] object-cover"/>
-            <div className="flex flex-row justify-between items-center pt-2">
-              <div className={`text-[${props.BigText}] pl-2 truncate w-[60%]`}>{props.title}</div>
+            <div className="flex flex-row justify-between items-center h-[10%] pt-3">
+              <div className={`${props.BigText} pl-2 truncate w-[60%]`}>{props.title}</div>
               <div className={roboto_con.className}>
-                <div className={`text-[${props.smallText}] pr-2 truncate`}>{props.date}</div>
+                <div className={`${props.smallText} pr-2 truncate`}>{props.date}</div>
               </div>
             </div>   
    </div>

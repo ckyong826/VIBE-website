@@ -59,6 +59,7 @@ export default function Slider() {
             <TshirtComponent alt={tshirt.alt} name={tshirt.name} src={tshirt.src} price={tshirt.price} />
           </SwiperSlide>
         ))}
+
         <div className="swiper-button-next"></div> 
         <div className="swiper-button-prev"></div>
       </Swiper>
