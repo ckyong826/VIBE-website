@@ -19,7 +19,16 @@ body {
   align-items: center;
 }
 
-.swiper-button-next, 
+.swiper-button-next {
+  padding: 30px;
+  color: #1D1D1F;
+  background: #f3f3f3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .swiper-button-prev {
   padding: 30px;
   color: #1D1D1F;
@@ -31,7 +40,7 @@ body {
 }
 
 .swiper-button-next:after,
-.swiper-button-prev:after {
+.swiper-button-prev:after{
   font-size: 20px;
   font-weight: bold;
 }

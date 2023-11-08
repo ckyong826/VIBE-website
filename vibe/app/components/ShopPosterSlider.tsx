@@ -14,7 +14,6 @@ export default function PosterSlider() {
   return(
     <>
     <Swiper
-    
         effect={'coverflow'}
         centeredSlides={true}
         slidesPerView={'auto'}
@@ -26,7 +25,10 @@ export default function PosterSlider() {
           slideShadows: false,
         }}
         loop={true}
-        navigation={true}
+        navigation={{
+          nextEl: '.swiper-button-next', 
+          prevEl: '.swiper-button-prev'
+        }}
         modules={[EffectCoverflow, Navigation]}
         className="h-[120%] flex flex-row items-center justify-center"
       >
@@ -45,6 +47,8 @@ export default function PosterSlider() {
         <SwiperSlide>
           <ShopPoster alt="All-Product-Poster" name="chill collection" src={All_Poster} />
         </SwiperSlide>
+        <div className="swiper-button-next"></div> 
+        <div className="swiper-button-prev"></div>
       </Swiper>
     </>
   )

@@ -24,6 +24,7 @@ export default function Slider() {
       <Swiper 
         slidesPerView={1}
         spaceBetween={0}
+        
         breakpoints={{
           640: {
             slidesPerView: 1,
@@ -47,6 +48,7 @@ export default function Slider() {
           },
         }}
         loop={true}
+        
         navigation={{
           nextEl: '.swiper-button-next', 
           prevEl: '.swiper-button-prev'
