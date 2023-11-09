@@ -1,5 +1,4 @@
 import Image, { StaticImageData } from 'next/image'
-import { bad_script } from './font'
 
 interface PosterProps {
   alt: string;

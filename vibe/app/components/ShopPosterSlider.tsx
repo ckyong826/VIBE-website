@@ -12,11 +12,12 @@ import { EffectCoverflow, Navigation } from 'swiper/modules';
 import All_Poster from "../../public/AllProduct.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleLeft,faCircleRight } from '@fortawesome/free-solid-svg-icons'
+import { motion } from 'framer-motion';
 
 export default function PosterSlider() {
   const swiperRef = useRef<SwiperType>();
   return(
-    <>
+    < >
     <Swiper
         effect={'coverflow'}
         onBeforeInit={(swiper) => {

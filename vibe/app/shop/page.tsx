@@ -1,10 +1,19 @@
+"use client"
+
 import PosterSlider from "../components/ShopPosterSlider"
 import { bad_script} from "../components/font"
+import { motion } from "framer-motion"
+import { FadeInVariants } from "@/app/components/hooks/useAnimation";
 
 export default function Shop() {
   return (
     <section className="block flex flex-col h-screen w-screen select-none cursor-default">
-      <div className="flex flex-col w-[screen] h-[50%] items-center pt-[70px]">
+      <motion.div 
+      variants={FadeInVariants}
+      initial="hidden"
+      whileInView="visible"
+      exit="hidden"
+      className="flex flex-col w-[screen] h-[50%] items-center pt-[70px]">
         <div className="h-[74%]">
         <PosterSlider/>
         </div>
@@ -20,7 +29,7 @@ export default function Shop() {
             </div>
           </div>
           
-      </div>
+      </motion.div>
         
     </section>
   )

@@ -29,9 +29,39 @@ const config: Config = {
         '0%': { transform: 'translateX(0)' },
         '100%': { transform: 'translateX(-100%)' },
       },
+      'fade-in': {
+        '0%': { opacity: '0' },
+        '100%': { opacity: '1' },
+      },
+      'fade-out': {
+        '0%': { opacity: '1' },
+        '100%': { opacity: '0' },
+      },
+      'fade-left': {
+        '0%': { opacity: '0', transform: 'translateX(100%)' },
+        '100%': { opacity: '1', transform: 'translateX(0)' },
+      },
+      'fade-right': {
+        '0%': { opacity: '0', transform: 'translateX(-100%)' },
+        '100%': { opacity: '1', transform: 'translateX(0)' },
+      },
+      'fade-up':{
+        '0%': { opacity: '0', transform: 'translateY(100%)' },
+        '100%': { opacity: '1', transform: 'translateY(0)' },
+      },
+      'fade-down':{
+        '0%': { opacity: '0', transform: 'translateY(-100%)' },
+        '100%': { opacity: '1', transform: 'translateY(0)' },
+      }
     },
     animation: {
       'infinite-marquee':'marquee 800s linear infinite',
+      'fade-in': 'fade-in 0.5s ease-in-out',
+      'fade-out': 'fade-out 0.5s ease-in-out',
+      'fade-left': 'fade-left 0.5s ease-in-out',
+      'fade-right': 'fade-right 0.5s ease-in-out',
+      'fade-up': 'fade-up 0.5s ease-in-out',
+      'fade-down': 'fade-down 0.5s ease-in-out',
     },
     
     },

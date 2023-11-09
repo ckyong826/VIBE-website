@@ -1,3 +1,8 @@
+"use client"
+
+import {motion } from 'framer-motion'
+import { FadeUpVariants } from './hooks/useAnimation'
+
 export default function Bottombar() {
   const tagline = [
     "rm58 on 2nd item",
@@ -10,7 +15,11 @@ export default function Bottombar() {
     "VIBE",
   ]
   return (
-    <div className="w-screen select-none h-[5%] text-[17px] cursor-default font-racing bg-[#BDF704] 
+    <motion.div 
+    variants={FadeUpVariants}
+    initial="hidden"
+    animate="visible"
+    className="w-screen select-none h-[5%] text-[17px] cursor-default font-racing bg-[#BDF704] 
                     text-[#1D1D1F] flex justify-between truncate uppercase fixed bottom-0 items-center 
                     z-[999]">
       <div className="flex inline-block animate-infinite-marquee">
@@ -37,7 +46,7 @@ export default function Bottombar() {
           )
         })}
       </div>
-    </div>
+    </motion.div>
   )
 }
 

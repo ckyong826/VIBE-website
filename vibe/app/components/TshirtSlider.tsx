@@ -67,7 +67,7 @@ export default function Slider() {
           </SwiperSlide>
         ))}
       <div className='absolute flex items-center justify-center w-screen  z-[100]'>
-        <div className='flex flex-row  justify-between w-[98%]'>
+        <div className='flex flex-row  justify-between w-[99%]'>
           <button 
             onClick={() => swiperRef.current?.slidePrev()} 
             className='block  w-[70px] h-[70px] bg-t-black rounded-[50%] flex items-center justify-center'>

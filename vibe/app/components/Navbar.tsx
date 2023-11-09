@@ -1,4 +1,6 @@
 "use client";
+import {motion} from "framer-motion";
+import { FadeDownVariants } from "./hooks/useAnimation";
 import Link from 'next/link'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
@@ -9,7 +11,7 @@ import { useState} from 'react'
 
 export default function Navbar(){
   const Links = [
-    {name:"HOME",link:"/"},
+    {name:"HOME",link:"/home"},
     {name:"SHOP",link:"/shop"},
     {name:"STORY",link:"/story"},
     {name:"STOCK",link:"/stock"},
@@ -21,9 +23,13 @@ export default function Navbar(){
   const router = useRouter()
   return(
     <div className='fixed bg-t-black select-none z-[200]'>
-      <nav className="w-screen h-[100px] flex text-t-white items-center justify-between top-0">
+      <motion.nav 
+      variants={FadeDownVariants}
+      initial="hidden"
+      animate="visible"
+      className="w-screen h-[100px] flex text-t-white items-center justify-between top-0">
         <div className='w-[130px] h-auto block translate-x-[30%] max-md:translate-x-[20%]'>
-        <Image src={Logo} alt="VIBE-streetwear" className='object-scale-down items-center cursor-pointer' onClick={() => router.push('/')}/>
+        <Image src={Logo} alt="VIBE-streetwear" className='object-scale-down items-center cursor-pointer' onClick={() => router.push('/home')}/>
         </div>
         <ul className={`w-[600px] text-[30px] flex font-roboto-con font-medium items-center justify-center 
                        transition-all duration-200 ease-in-out max-lg:w-screen max-lg:h-screen  max-lg:pt-[100px]
@@ -61,7 +67,7 @@ export default function Navbar(){
           </button>
         </ul>
         
-     </nav>
+     </motion.nav>
     </div>
   )
 }
