@@ -8,7 +8,7 @@ import ShopPoster from "./components/ShopPosterComponent"
 
 export default function Home() {
   return (
-    <div className="scroll-smooth overflow-y-scroll snap-y snap-mandatory h-screen scrollbar-hide cursor-default select-none">
+    <div className="relative scroll-smooth overflow-y-scroll snap-y snap-mandatory h-screen scrollbar-hide cursor-default select-none">
       {/* First Page */}
       <section className="snap-start block flex flex-col h-screen pt-[100px] w-screen">
         {/* New + Image */}
