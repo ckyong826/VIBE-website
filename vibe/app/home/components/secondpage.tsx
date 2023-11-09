@@ -31,10 +31,6 @@ export default function SecondPage(){
         </motion.div>}
         {/* Tshirt Slider*/}
         <motion.div 
-        variants={FadeUpVariants}
-        initial="hidden"
-        whileInView="visible"
-        exit="hidden"
         className="h-[45%]">
         <Slider/>
         </motion.div>

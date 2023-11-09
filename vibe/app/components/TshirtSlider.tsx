@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useRef, useState,useEffect,useCallback } from 'react';
+import React, { useRef, useState,useEffect,useCallback,useReducer } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Swiper as SwiperType } from 'swiper';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -11,6 +11,7 @@ import '.././globals.css'
 import { Navigation} from 'swiper/modules';
 import TshirtComponent from './TshirtComponent';
 import All_Poster from "../../public/AllProduct.jpg"
+import { motion } from 'framer-motion';
 
 export default function Slider() {
   const tshirts = [
@@ -22,6 +23,8 @@ export default function Slider() {
     {alt:"CHILL BRO TEE",name:"Chill Bro Tee(black)",src:All_Poster,price:"RM 129.00 MYR"},
   ]
   const swiperRef = useRef<SwiperType>();
+  const [durationCount, setDurationCount] = useState<any>(0);  
+  
   return (
     <>
       <Swiper 
@@ -62,11 +65,15 @@ export default function Slider() {
         className="truncate w-screen h-[100%] pt-[20px] flex flex-row items-center justify-center
                             pl-[20px] pr-[20px] ">
         {tshirts.map((tshirt,index) => (
+
           <SwiperSlide key={index}>
-            <TshirtComponent alt={tshirt.alt} name={tshirt.name} src={tshirt.src} price={tshirt.price} />
+            <TshirtComponent alt={tshirt.alt} name={tshirt.name} src={tshirt.src} price={tshirt.price} durationCount={durationCount}/>
           </SwiperSlide>
+          
         ))}
+        
       <div className='absolute flex items-center justify-center w-screen  z-[100]'>
+        
         <div className='flex flex-row  justify-between w-[99%]'>
           <button 
             onClick={() => swiperRef.current?.slidePrev()} 
