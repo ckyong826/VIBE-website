@@ -59,7 +59,7 @@ export default function Slider() {
           prevEl: '.swiper-button-prev'
         }}
         modules={[Navigation]}
-        className="truncate w-screen h-[45%] pt-[20px] flex flex-row items-center justify-center
+        className="truncate w-screen h-[100%] pt-[20px] flex flex-row items-center justify-center
                             pl-[20px] pr-[20px] ">
         {tshirts.map((tshirt,index) => (
           <SwiperSlide key={index}>

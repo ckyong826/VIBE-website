@@ -4,7 +4,7 @@ import { bad_script } from "../../components/font"
 import Slider from "../../components/TshirtSlider"
 import ShopPoster from "../../components/ShopPosterComponent"
 import {motion} from "framer-motion"
-import { FadeInVariants } from "@/app/components/hooks/useAnimation";
+import { FadeDownVariants,FadeUpVariants } from "@/app/components/hooks/useAnimation";
 
 
 export default function SecondPage(){
@@ -12,7 +12,7 @@ export default function SecondPage(){
     <section  className="snap-start block flex flex-col h-screen w-screen ">
         {/* Poster */}
         {<motion.div 
-        variants={FadeInVariants}
+        variants={FadeDownVariants}
         initial="hidden"
         whileInView="visible"
         exit="hidden"
@@ -30,7 +30,15 @@ export default function SecondPage(){
           </div>
         </motion.div>}
         {/* Tshirt Slider*/}
+        <motion.div 
+        variants={FadeUpVariants}
+        initial="hidden"
+        whileInView="visible"
+        exit="hidden"
+        className="h-[45%]">
         <Slider/>
+        </motion.div>
+        
       </section>
   )
 }
