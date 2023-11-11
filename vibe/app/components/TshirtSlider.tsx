@@ -25,13 +25,6 @@ export default function Slider() {
   const swiperRef = useRef<SwiperType>();
   const [count, setCount] = useState(0.2);
   
-  const add = (factor:any) => {
-    setCount(count + factor);
-    if (count >= 1.0) {
-      setCount(0.2);
-    }
-    return count;
-  };
 
   return (
     <>
@@ -65,19 +58,14 @@ export default function Slider() {
         }}
         loop={true}
         
-        navigation={{
-          nextEl: '.swiper-button-next', 
-          prevEl: '.swiper-button-prev'
-        }}
+        navigation={true}
         modules={[Navigation]}
         className="truncate w-screen h-[100%] pt-[20px] flex flex-row items-center justify-center
                             pl-[20px] pr-[20px] ">
         {tshirts.map((tshirt,index) => (
           <SwiperSlide key={index}>
             <TshirtComponent alt={tshirt.alt} name={tshirt.name} src={tshirt.src} price={tshirt.price} durationCount={count}/>
-            {add(0.2)}
-          </SwiperSlide>
-          
+          </SwiperSlide>        
         ))}
         
       <div className='absolute flex items-center justify-center w-screen  z-[100]'>
