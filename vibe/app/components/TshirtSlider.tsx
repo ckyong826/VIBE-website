@@ -23,8 +23,16 @@ export default function Slider() {
     {alt:"CHILL BRO TEE",name:"Chill Bro Tee(black)",src:All_Poster,price:"RM 129.00 MYR"},
   ]
   const swiperRef = useRef<SwiperType>();
-  const [durationCount, setDurationCount] = useState<any>(0);  
+  const [count, setCount] = useState(0.2);
   
+  const add = (factor:any) => {
+    setCount(count + factor);
+    if (count >= 1.0) {
+      setCount(0.2);
+    }
+    return count;
+  };
+
   return (
     <>
       <Swiper 
@@ -65,9 +73,9 @@ export default function Slider() {
         className="truncate w-screen h-[100%] pt-[20px] flex flex-row items-center justify-center
                             pl-[20px] pr-[20px] ">
         {tshirts.map((tshirt,index) => (
-
           <SwiperSlide key={index}>
-            <TshirtComponent alt={tshirt.alt} name={tshirt.name} src={tshirt.src} price={tshirt.price} durationCount={durationCount}/>
+            <TshirtComponent alt={tshirt.alt} name={tshirt.name} src={tshirt.src} price={tshirt.price} durationCount={count}/>
+            {add(0.2)}
           </SwiperSlide>
           
         ))}
