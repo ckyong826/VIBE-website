@@ -19,7 +19,7 @@ interface ProductProps {
   description: String;
 }
 
-export default function Product(props: ProductProps){
+export default function Product(){
   const Gallery =[
     {src:All_Poster,alt:"All-Product-Poster"},
     {src:Model_Poster,alt:"All-Product-Poster"},
