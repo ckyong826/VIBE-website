@@ -9,15 +9,15 @@ import { racing_sans_one, roboto_con_bold,roboto_con } from '@/app/components/us
 import { DelayVariants,  itemFadeInVariants } from '@/app/components/useAnimation';
 
 
-interface ProductProps {
-  id: String;
-  name: String;
-  price: String;
-  color: Array<String>;
-  size: Array<String>;
-  quantity: Number;
-  description: String;
-}
+// interface ProductProps {
+//   id: String;
+//   name: String;
+//   price: String;
+//   color: Array<String>;
+//   size: Array<String>;
+//   quantity: Number;
+//   description: String;
+// }
 
 export default function Product(){
   const Gallery =[
