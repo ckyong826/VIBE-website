@@ -12,6 +12,7 @@ import { Navigation} from 'swiper/modules';
 import TshirtComponent from './TshirtComponent';
 import All_Poster from "../../public/AllProduct.jpg"
 import { motion } from 'framer-motion';
+import { DelayVariants, itemFadeInVariants } from './useAnimation';
 
 export default function Slider() {
   const tshirts = [
@@ -62,14 +63,20 @@ export default function Slider() {
         modules={[Navigation]}
         className="truncate w-screen h-[100%] pt-[20px] flex flex-row items-center justify-center
                             pl-[20px] pr-[20px] ">
+        <motion.ul
+        variants={DelayVariants}
+        initial="hidden"
+        whileInView="visible"
+        exit="hidden"
+        >
         {tshirts.map((tshirt,index) => (
           <SwiperSlide key={index}>
             <TshirtComponent alt={tshirt.alt} name={tshirt.name} src={tshirt.src} price={tshirt.price} durationCount={count}/>
           </SwiperSlide>        
         ))}
-        
+        </motion.ul>
+      
       <div className='absolute flex items-center justify-center w-screen  z-[100]'>
-        
         <div className='flex flex-row  justify-between w-[99%]'>
           <button 
             onClick={() => swiperRef.current?.slidePrev()} 

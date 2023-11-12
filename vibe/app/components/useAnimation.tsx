@@ -1,3 +1,4 @@
+import { easeInOut } from "framer-motion"
 
 
 const FadeInVariants = {
@@ -112,6 +113,40 @@ const FadeDownVariants={
   }
 }
 
+const itemFadeInVariants = {
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      y: { stiffness: 1000, velocity: -100 }
+    }
+  },
+  hidden: {
+    y: 50,
+    opacity: 0,
+    transition: {
+      y: { stiffness: 1000 }
+    }
+  }
+};
+
+const DelayVariants = {
+  visible: {
+    transition: { staggerChildren: 0.07, delayChildren: 0.2 }
+  },
+  hidden: {
+    transition: { staggerChildren: 0.05, staggerDirection: -1 }
+  }
+};
 
 
-export {FadeInVariants,FadeOutVariants,FadeLeftVariants,FadeRightVariants,FadeUpVariants,FadeDownVariants}
+export {FadeInVariants,
+        FadeOutVariants,
+        FadeLeftVariants,
+        FadeRightVariants,
+        FadeUpVariants,
+        FadeDownVariants,
+        itemFadeInVariants,
+        DelayVariants,
+
+      }

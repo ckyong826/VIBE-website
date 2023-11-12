@@ -1,10 +1,10 @@
 import React from "react";
 import All_Poster from "../../../public/AllProduct.jpg"
-import { bad_script } from "../../components/font"
+import { bad_script } from "../../components/useFont"
 import Slider from "../../components/TshirtSlider"
 import ShopPoster from "../../components/ShopPosterComponent"
 import {motion} from "framer-motion"
-import { FadeDownVariants,FadeUpVariants } from "@/app/components/hooks/useAnimation";
+import { FadeDownVariants,FadeUpVariants } from "@/app/components/useAnimation";
 
 
 export default function SecondPage(){

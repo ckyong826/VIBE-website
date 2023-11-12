@@ -1,7 +1,7 @@
 import StoryBox from "../../components/storyComponent";
 import Link from "next/link"
 import {motion} from "framer-motion"
-import { FadeRightVariants,FadeLeftVariants } from "@/app/components/hooks/useAnimation";
+import { FadeRightVariants,FadeLeftVariants } from "@/app/components/useAnimation";
 
 export default function ThirdPage(){
   return(

@@ -1,6 +1,6 @@
 "use client";
 import {motion} from "framer-motion";
-import { FadeDownVariants } from "./hooks/useAnimation";
+import { FadeDownVariants } from "./useAnimation";
 import Link from 'next/link'
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'

@@ -13,7 +13,7 @@ export default function Home(){
 
   return(
     <AnimatePresence>
-    <div className="relative scroll-smooth overflow-y-scroll snap-y snap-mandatory h-screen scrollbar-hide cursor-default select-none">
+    <div className="relative scroll-smooth overflow-y-scroll snap-y snap-mandatory scrollbar-hide h-screen cursor-default select-none">
         <FirstPage/>
         <SecondPage/>
         <ThirdPage/>

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import All_Poster from "../../public/AllProduct.jpg"
-import { roboto_con } from "./font"
+import { roboto_con } from "./useFont"
 
 interface StoryBoxProps {
   title: String;

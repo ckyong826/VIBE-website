@@ -1,7 +1,7 @@
 import {motion} from 'framer-motion'
 import Image from 'next/image'
 import Home_photo from '../../../public/vibe-streetwear-model-homepage.jpg'
-import { FadeLeftVariants,FadeRightVariants } from '@/app/components/hooks/useAnimation'
+import { FadeLeftVariants,FadeRightVariants } from '@/app/components/useAnimation'
 
 
 export default function FirstPage(){
@@ -16,6 +16,7 @@ export default function FirstPage(){
           whileInView="visible"
           initial="hidden"
           exit="hidden"
+          
           className="text-[220px] text-end bottom-[-100%] max-md:text-[50px] min-[1920px]:text-[300px]
                         max-xl:text-[200px] max-lg:text-[150px] ">NEW</motion.h1 >}
       </div>

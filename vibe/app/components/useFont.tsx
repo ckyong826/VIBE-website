@@ -10,6 +10,13 @@ const roboto_con = Roboto_Condensed({
   display: 'swap'
 });
 
+const roboto_con_bold = Roboto_Condensed({
+  weight: ['700'],
+  style: 'normal',
+  subsets: ['latin'],
+  display: 'swap'
+});
+
 const archivo_black = Archivo_Black({
   weight: ['400'],
   style: 'normal',
@@ -31,4 +38,4 @@ const bad_script = Bad_Script({
   display: 'swap'
 });
 
-export { roboto_con, archivo_black, racing_sans_one, bad_script }
+export { roboto_con, archivo_black, racing_sans_one, bad_script, roboto_con_bold }

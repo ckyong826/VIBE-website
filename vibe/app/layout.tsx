@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import Navbar from './components/Navbar'
-import { roboto_con, archivo_black, racing_sans_one } from './components/font'
+import { roboto_con, archivo_black, racing_sans_one } from './components/useFont'
 import Bottombar from './components/Bottombar'
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className='scrollbar-hide'>
       <body className={archivo_black.className}>
         <div className={roboto_con.className}>
           <Navbar />

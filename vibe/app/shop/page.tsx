@@ -1,9 +1,9 @@
 "use client"
 
 import PosterSlider from "../components/ShopPosterSlider"
-import { bad_script} from "../components/font"
+import { bad_script} from "../components/useFont"
 import { motion } from "framer-motion"
-import { FadeInVariants } from "@/app/components/hooks/useAnimation";
+import { FadeInVariants } from "@/app/components/useAnimation";
 
 export default function Shop() {
   return (
@@ -17,7 +17,6 @@ export default function Shop() {
         <div className="h-[74%]">
         <PosterSlider/>
         </div>
-        
         {/* Title */}
         <div className="uppercase pt-[10px] text-[30px] text-center max-md:text-[20px]">
         chill collection
@@ -27,10 +26,8 @@ export default function Shop() {
             <div className="text-[15px] text-center max-md:text-[10px]">
             With us, you don't just wear your heart on your sleeve; you wear your convictions, your passions, your stories.
             </div>
-          </div>
-          
-      </motion.div>
-        
+          </div>  
+      </motion.div> 
     </section>
   )
 }
