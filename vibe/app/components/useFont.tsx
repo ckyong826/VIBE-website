@@ -1,4 +1,4 @@
-import { Roboto_Condensed } from 'next/font/google'
+import { Archivo, Roboto_Condensed } from 'next/font/google'
 import { Archivo_Black } from 'next/font/google'
 import { Racing_Sans_One } from 'next/font/google'
 import { Bad_Script } from 'next/font/google'
@@ -38,4 +38,11 @@ const bad_script = Bad_Script({
   display: 'swap'
 });
 
-export { roboto_con, archivo_black, racing_sans_one, bad_script, roboto_con_bold }
+const archivo = Archivo({
+  weight: ['400'],
+  style: 'normal',
+  subsets: ['latin'],
+  display: 'swap'
+});
+
+export { roboto_con, archivo_black, racing_sans_one, bad_script, roboto_con_bold,archivo }
