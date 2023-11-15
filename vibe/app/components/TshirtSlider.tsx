@@ -26,7 +26,6 @@ export default function Slider() {
   const swiperRef = useRef<SwiperType>();
   const [count, setCount] = useState(0.2);
   
-
   return (
     <>
       <Swiper 

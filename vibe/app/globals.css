@@ -19,8 +19,6 @@ body {
   align-items: center;
 }
 
-
-
 @layer utilities {
   .pause {
     animation-play-state: paused;
