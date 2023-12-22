@@ -30,7 +30,7 @@ export default function CartItem(props:CartItemProps) {
   }, [quantity])
 
   return (
-    <motion.div className='flex flex-row w-[100%] h-[100%] justify-center items-center'>
+    <motion.div className='block flex flex-row w-[100%] h-[100%] justify-center items-center'>
       <div className='w-[95%] mt-[20px] flex flex-row justify-start items-center bg-t-white 
                             rounded-2xl'>
           {/* Image */}
@@ -69,12 +69,10 @@ export default function CartItem(props:CartItemProps) {
               </div>
             </div>
           </div>
-        
     </div>
       <button className='w-[30px] h-[30px] items-center justify-center mt-[20px] pl-5'>
         <FontAwesomeIcon icon={faCircleXmark} className='w-[30px] h-[30px] text-t-white hover:text-t-yellow transition duration-700 ease-in-out' />
       </button>
     </motion.div>
-    
   )
 }

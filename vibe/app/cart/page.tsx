@@ -6,6 +6,7 @@ import { faReply } from '@fortawesome/free-solid-svg-icons';
 import { racing_sans_one } from '../components/useFont';
 import { FadeDownVariants } from '../components/useAnimation';
 import CartItem from './components/CartComponent';
+import Summary from './components/SummaryComponent';
 
 export default function Cart(){
   const cartItem=[
@@ -27,7 +28,7 @@ export default function Cart(){
         variants={FadeDownVariants}
         initial="hidden"
         animate="visible"
-        className='flex flex-row w-[95%] h-[10%] justify-between items-center'>
+        className='flex flex-row w-[85%] h-[10%] justify-between items-center'>
           <div>
             <FontAwesomeIcon icon={faReply} className='w-[40px] h-[40px]'/>
           </div>
@@ -42,13 +43,14 @@ export default function Cart(){
           </div>
         </motion.div>
         {/* Cart Item */}
-        {cartItem.map((item,index) => {
-          return(
-            <CartItem name={item.name} price={item.price} size={item.size} quantity={item.quantity} image={item.image} key={index}/>
-          )
-        })}
+          {cartItem.map((item,index) => {
+            return(
+              <CartItem name={item.name} price={item.price} size={item.size} quantity={item.quantity} image={item.image} key={index}/>
+            )
+          })}
       </motion.div>
       {/* Check Out */}
+      <Summary/>
     </section>
   )
 }
