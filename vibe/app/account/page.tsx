@@ -1,13 +1,8 @@
-function Account(){
+import LoginCard from "./components/loginComponent"
+
+export default function Account(){
   return (
-    <div>
-      <h1>Account</h1>
-    </div>
+    <LoginCard/>
   )
 }
 
-Account.getInitialProps = async (ctx:any) => {
-return {}
-}
-
-export default Account;
